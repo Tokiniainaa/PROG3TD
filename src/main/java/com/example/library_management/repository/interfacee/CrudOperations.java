@@ -1,4 +1,4 @@
-package com.example.library_management.interfacee;
+package com.example.library_management.repository.interfacee;
 
 import java.sql.SQLException;
 import java.util.List;
