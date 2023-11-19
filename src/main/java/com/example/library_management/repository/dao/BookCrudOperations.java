@@ -45,7 +45,7 @@ public class BookCrudOperations implements CrudOperations <book> {
                 statement.setInt(1, book.getIdBook());
                 statement.setString(2,book.getBookName());
                 statement.setInt(3, book.getPageNumbers());
-                statement.setString(4, book.getTopic().getTopic());
+                statement.setObject(4, book.getTopic(), java.sql.Types.OTHER);
                 statement.setString(5,book.getReleaseDate());
                 statement.setInt(6,book.getIdAuthor());
 
