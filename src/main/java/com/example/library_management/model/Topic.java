@@ -8,12 +8,6 @@ import lombok.*;
 @EqualsAndHashCode
 @ToString
 
-public class author {
-    private int id_author ;
-
-    private String name ;
-
-    private  String  sex;
-
-
+public class Topic {
+    private String topic;
 }

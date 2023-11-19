@@ -10,7 +10,7 @@ import java.sql.SQLException;
 @Configuration
 public class dataBaseConnection {
     @Bean
-    public Connection getConnection() throws SQLException {
+    public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(
                 System.getenv("Url"),
                 System.getenv("User"),
@@ -19,6 +19,7 @@ public class dataBaseConnection {
 
 
     }
+
 
 
 }

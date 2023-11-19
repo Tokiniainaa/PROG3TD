@@ -1,8 +1,8 @@
-CREATE TABLE IF NOT EXISTS SUBCRIBES (
-    id serial primary key,
+CREATE TABLE IF NOT EXISTS SUBSCRIBES (
+    id int  primary key not null,
     name varchar (100) not null,
     gender char (1) check (gender='M' or gender='F') not null
     );
-INSERT INTO SUBSCRIBES (name,gender)values('JULE','M');
-INSERT INTO SUBSCRIBES (name,gender)values('JULIETTE','F');
-INSERT INTO SUBSCRIBES (name,gender)values('CESAR','M');
+INSERT INTO SUBSCRIBES (id,name,gender)values(1,'JULE','M');
+INSERT INTO SUBSCRIBES (id,name,gender)values(2,'JULIETTE','F');
+INSERT INTO SUBSCRIBES (id,name,gender)values(3,'CESAR','M');

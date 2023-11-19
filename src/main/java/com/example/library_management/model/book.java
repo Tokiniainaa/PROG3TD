@@ -14,11 +14,12 @@ public class book {
 
     private  int pageNumbers;
 
-    private  String topic;
+    private  Topic topic;
 
     private String releaseDate;
 
-    private author author;
+    private int idAuthor;
+
 
 
 }
